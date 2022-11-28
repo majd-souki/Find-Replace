@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Post Tool </title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- <link rel="shortcut icon" href="favicon.ico"/> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body id="main">
+
+<div class="container">
+  <div class="row">
+    <div class="col-xl-12">
+      <div class="top">
+        <h2 id="header" class="text-center header"> Post Tool </h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="class1 class2 class3">
+  <h1 class="class4 class5 class6"></h1>
+</div>
+
+<div class="container special">
+  <div class="row">
+    <div class="col-xl-3">
+    </div>
+    <div class="col-xl-6">
+      <div class="form-group">
+        <label for="spacing"></label>
+        <h6 id="subheader0" class="subheader"> URL </h6>
+        <input id="url" type="text" class="form-control rounded-0" id="find" rows="1" name="find"></input>
+      </div>
+
+      <div class="form-group" style="margin-top: -20px;">
+        <label for="spacing"></label>
+        <h6 id="subheader1" class="subheader"> # </h6>
+        <input id="count" class="form-control rounded-0" type="number" min="0" step="1" style="max-width: 188px" />
+      </div>
+
+      <button type="button" id="post" class="btn btn-primary btn-custom"> Post </button>
+      <button type="button" id="mode" class="btn btn-info btn-custom"> Sync </button>
+      <button type="button" id="stop" class="btn btn-danger btn-custom"> Stop </button>
+      <button type="button" class="btn btn-custom btn-count disabled"><span id="result"> </span></button>
+
+    </div>
+    <div class="col-xl-3">
+    </div>
+  </div>
+</div>
+
+
+<script>
+var count = document.getElementById("count").value;
+var async = false;
+var quit;
+
+function post() {
+
+  for (i = 1; i <= count.value; i++) {
+
+    // quit button
+    if (quit) {
+      quit = false;
+      return false;
+    }
+
+    // create & execute post request
+    const Http = new XMLHttpRequest();
+    const url = document.getElementById("url").value;
+    Http.open("GET", url, false);
+    Http.send();
+    console.log(Http.responseText);
+  }
+
+}
+
+
+var stop_button = document.querySelector('#stop');
+// quit button
+stop_button.addEventListener('click', ()=> {
+  quit = true
+  console.log("Stopping remaining requests.")
+  document.getElementById("result").innerHTML = "All remaining post requests have been aborted.";
+})
+
+async function postAsyn() {
+
+}
+
+var post_button = document.querySelector('#post');
+post_button.addEventListener('click', ()=> {
+  if (async)
+    post();
+  else
+    postSync();
+})
+
+var mode_button = document.querySelector('#mode');
+mode_button.addEventListener('click', ()=> {
+  if (async) {
+    async = false;
+    document.getElementById("mode").innerHTML = "Sync";
+    document.getElementById("stop").style.visibility = "visible";
+  }
+  else {
+    async = true;
+    document.getElementById("mode").innerHTML = "Asyn";
+    document.getElementById("stop").style.visibility = "hidden";
+    document.getElementById("result").innerHTML = "";
+  }
+})
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Find & Replace Text </title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="js/quotes.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body id="main">
+
+<div class="container">
+  <div class="row">
+    <div class="col-xl-12">
+      <div class="top">
+        <h2 id="header" class="text-center header"> Fix Quotes </h2>
+      </div>
+      <div class="theme-switch-wrapper">
+        <span id="dark" class="dark-button"> Dark Mode </span>
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container special">
+  <div class="row">
+    <div class="col-xl-3">
+    </div>
+    <div class="col-xl-6">
+      <div class="form-group">
+        <label for="spacing">  </label>
+        <textarea id="result" class="form-control rounded-0" id="result" rows="8" name="result" placeholder="Enter your text here."></textarea>
+      </div>
+
+      <button type="button" id="f&r" class="btn btn-primary btn-sanitize"> Fix Quotes </button>
+    </div>
+    <div class="col-xl-3">
+    </div>
+  </div>
+</div>
+
+<script src="js/dark-mode-quotes.js"></script>
+
+</body>
+</html>

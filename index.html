@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN28SJWP3J"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-RN28SJWP3J');
+    </script>
+
+    <title> Find & Replace Text </title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/413f4479b6.js"></script>
+    <script src="js/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+</head>
+<body id="main">
+
+
+<div class="text-right switch">
+  Dark mode:           
+  <span class="inner-switch">OFF</span>
+</div>
+
+<div class="top">
+  <h2 id="header" class="text-center header"> Find & Replace </h2>
+</div>
+<br/>
+<div class="container special" style="margin-bottom: -50px;">
+  <div class="row">
+    <div class="col-xl-3">
+    </div>
+    <div class="col-xl-6" id="insert" name="insert">
+      <div class="form-group form-group-first">
+        <label for="spacing"></label>
+        <h6 id="subheader0" class="subheader"> Find </h6>
+        <textarea id="find" class="form-control" id="find" rows="4" name="find"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="spacing"></label>
+        <h6 id="subheader1" class="subheader"> Replace </h6>
+        <textarea id="replace" class="form-control" id="replace" rows="4" name="replace"></textarea>
+      </div>
+
+      <button type="button" id="f&r" class="btn btn-light-mode btn-custom "> Find & Replace </button>
+      <button type="button" class="btn btn-custom btn-count disabled"><span id="count"> </span></button>
+
+      <div class="form-group">
+        <label for="spacing">  </label>
+        <textarea id="result" class="form-control" id="result" rows="10" name="result" placeholder="Enter your text to be found and replaced here."></textarea>
+      </div>
+          <button type="button" id="upload" class="btn btn-light-mode  btn-sm">
+            <input type="file" id="files" name="upload" accept=".txt, .csv" class="d-none"/>
+            <label for="files">
+              <i class="fa fa-upload"></i>
+              Choose File
+            </label>
+          </button>
+      <button type="button" id="download-txt" class="btn btn-light-mode btn-sm"> <i class="fa fa-download"></i> TXT </button>
+      <button type="button" id="download-csv" class="btn btn-light-mode btn-sm"> <i class="fa fa-download"></i> CSV </button>
+      <button type="button" id="copy-text" class="btn btn-light-mode btn-sm"> <i class="fa fa-clipboard"></i> Copy </button>
+
+
+      <div class="form-group">
+        <label for="spacing">  </label>
+        <h6 id="subheader0" class="subheader"> History </h6>
+        <br>
+        <div id="hist-insert">
+
+        </div>
+      </div>
+
+    </div>
+    <div class="col-xl-3">
+    </div>
+
+
+  </div>
+</div>
+<br>
+
+
+<section class="section-light">
+  <h6>
+    This website will be permanently moved to a less sketchy URL, <a href="https://findreplacetext.com">https://findreplacetext.com</a>
+    <br /><br />
+    This website will not be here after this coming Wednesday, the 20th, so I recommend you bookmark the new URL.
+  </h6>
+</section>
+
+
+</body>
+</html>

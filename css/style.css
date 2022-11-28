@@ -1,0 +1,204 @@
+body {
+  background-color: #ffffff;
+}
+
+.dark,
+.dark * {
+    background-color: #121212;
+    color: #ffffffdd !important;
+}
+
+.textarea-dark {
+  background-color: #1f1f1f !important;
+  border: 1px solid #070707 !important;
+}
+
+
+.textarea-dark:focus {
+  border: 1px solid #B48DF5 !important;
+}
+
+.label-dark {
+  color: #1f1f1f !important;
+}
+
+.switch {
+    align-self: flex-end;
+    margin: 0.9375rem;
+    margin-right: 2rem;
+}
+
+.inner-switch {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #555;
+    border-radius: 1.25rem;
+    width: 3.125rem;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.1875rem;
+    margin-left: 0.3125rem;
+}
+
+textarea {
+  min-width: 100% !important;
+}
+
+textarea::placeholder {
+  font-size: 16px;
+}
+
+textarea:disabled {
+  background-color: transparent !important;
+  border: 1px solid #cfd4d9 !important;
+}
+
+
+textarea:focus {
+  border: 1px solid #24A0ED !important;
+}
+
+.top {
+  margin-top: 1%;
+}
+
+.header {
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+.subheader {
+  color: #222;
+  font-weight: 300!important;
+  font-size: 18px !important;
+}
+
+.histheader {
+  color: #222;
+  font-weight: 300!important;
+  font-size: 15px !important;
+}
+
+.btn-custom {
+  margin-top: 1.5%;
+  box-shadow: none !important;
+}
+
+.btn-count {
+  opacity: 1 !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  color: black !important;
+  color: #222;
+  margin-left: 0% !important;
+}
+
+.btn-count span {
+  position: absolute;
+  margin-top: -3px !important;
+  font-weight: 300;
+}
+
+.count {
+  margin-top: -10px;
+}
+
+.remove-all-margin-padding {
+  margin:0 ! important;
+  padding:0 ! important;
+}
+
+.form-group-first {
+  margin-bottom: 0rem !important
+}
+
+.btn-dark-mode { 
+  background-color: #B48DF5;
+  color: #1f1f1f !important;
+}
+
+.i-dark {
+  color: #1f1f1f !important; 
+}
+
+.btn-dark-mode:hover, 
+.btn-dark-mode:focus, 
+.btn-dark-mode:active, 
+.btn-dark-mode.active, 
+.open .dropdown-toggle.btn-dark-mode { 
+  color: #FFFFFF; 
+  background-color: #9575c9 !important; 
+} 
+ 
+.btn-dark-mode:active, 
+.btn-dark-mode.active, 
+.open .dropdown-toggle.btn-dark-mode { 
+  background-image: none; 
+} 
+ 
+.btn-dark-mode .badge { 
+  color: #B48DF5; 
+  background-color: #FFFFFF; 
+}
+
+button { 
+  color: #FFFFFF;
+  background-color: #24A0ED; 
+} 
+ 
+.btn-light-mode:hover { 
+  background-color: #2087c7; 
+} 
+ 
+.btn-light-mode:active, 
+.btn-light-mode.active, 
+.open .dropdown-toggle.btn-light-mode { 
+  background-image: none; 
+} 
+ 
+.btn-light-mode .badge { 
+  color: #24A0ED; 
+  background-color: #FFFFFF; 
+}
+
+textarea:focus, .btn {
+  box-shadow: none !important;
+}
+
+label {
+  color: #FFFFFF;
+  background-color: transparent !important;
+  cursor: pointer;
+  margin-bottom: 0rem !important;
+}
+
+i {
+  background-color: transparent !important;
+}
+
+section {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 25px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px
+}
+
+section h6, section a {
+  background-color: transparent !important;
+}
+
+.section-light {
+  background-color: rgb(208, 234, 255);
+}
+
+.section-dark {
+  background-color: #100027;
+}
+
+.section-dark a {
+  color: rgb(213, 145, 255) !important;
+}
